@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,14 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hallo', function () {
-    return view('halo');
-});
-
-Route::get('/pendataan', function () {
-    return view('pendataan');
-})->name('daftar');
-
-Route::get('/user/{id}', function($id){
-    return 'smktelkom' .$id;
-});
+Route::get('/dasboard', [DashboardController::class,'index']);
+Route::get('/pelanggan', [PelangganController::class,'index']);
