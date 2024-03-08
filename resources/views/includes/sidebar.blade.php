@@ -17,7 +17,7 @@ id="accordionSidebar"><!-- Sidebar - Brand -->
 <!-- Divider -->
 <hr class="sidebar-divider">
 <li class="nav-item active">
-<a class="nav-link" href="/pelanggan">
+<a class="nav-link" href="/buku">
 <i class="fas fa-fw fa-users"></i>
 <span>Data Buku</span></a>
 </li>

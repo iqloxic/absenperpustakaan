@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukuController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PelangganController;
 use Illuminate\Support\Facades\Route;
@@ -20,4 +21,10 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [DashboardController::class,'index']);
-Route::get('/pelanggan', [PelangganController::class,'index']);
+Route::get('/buku', [BukuController::class,'index']);
+Route::get('/tambahbuku', [BukuController::class, 'tambahbuku']);
+Route::post('/buku', [BukuController::class, 'simpan']);
+Route::get('/buku/{buku_id}', [BukuController::class, 'show']);
+Route::get('/buku/{buku_id}/edit', [BukuController::class, 'edit']);
+Route::put('/buku/{buku_id}', [BukuController::class, 'update']);
+Route::delete('/buku/{buku_id}', [BukuController::class, 'destroy']);
