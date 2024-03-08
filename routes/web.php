@@ -19,5 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dasboard', [DashboardController::class,'index']);
+Route::get('/home', [DashboardController::class,'index']);
 Route::get('/pelanggan', [PelangganController::class,'index']);

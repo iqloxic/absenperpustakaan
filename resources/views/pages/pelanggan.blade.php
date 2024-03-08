@@ -2,7 +2,7 @@
 @extends('layouts.admin')
 @section('judul', 'Data Pelanggan')
 
-@section('tabel')
+@section('content')
 
 <div class="p-3">
         <table id="example1" class="table table-bordered table-striped">

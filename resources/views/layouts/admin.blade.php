@@ -9,9 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Absensi Perpustakaan</title>
 
-@include('includes.style')
+    <!-- Custom fonts for this template-->
+    @include('includes.style')
 
 </head>
 
@@ -35,28 +36,14 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <!-- Content Wrapper, Contains page content -->
-    <div class="content-wrapper">
-     <!-- Content Header (Page header) -->
-     <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                <h1>@yield('judul')</h1>
-                </div>
-            </div>
-        </div> <!-- /.container-fluid -->
-    </section>
-
-    @yield('content')
-    @yield('tabel')
+                @yield('content')
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-    @include('includes.footer')
+            @include('includes.footer')
             <!-- End of Footer -->
 
         </div>
@@ -92,7 +79,7 @@
 
     <!-- Bootstrap core JavaScript-->
     @include('includes.script')
+    
 
 </body>
-
 </html>
